@@ -11,15 +11,14 @@ Stack: React + Vite + TypeScript + Tailwind. Giao diện tiếng Việt, respons
 - Dữ liệu mẫu để trong src/data/*.json.
 
 ## Đã làm
-- [x] Khung chung: header 2 tầng, menu + mega menu, footer, routing
-- [x] Trang chủ
-- [x] Tin tức (danh sách, chi tiết)
-- [x] Giới thiệu (Giới thiệu chung, Sơ đồ tổ chức) và Hoạt động (5 trang)
-- [~] Prompt 5A (Hỏi đáp, Liên hệ): làm dở khi hết token, cần kiểm tra file thiếu/lỗi
+- [x] Khung chung: header, menu ngang 7 mục (có E-learning), mega menu 6 cột, footer, routing
+- [x] Trang chủ, Tin tức, Giới thiệu, Hoạt động (5 trang)
+- [x] Hỏi đáp (Câu hỏi thường gặp, Danh sách câu hỏi, Tạo câu hỏi) và Liên hệ
+- [~] E-learning (/e-learning): làm dở khi hết token, cần kiểm tra và hoàn thiện
 
 ## Còn lại
-- [ ] Hoàn thiện Hỏi đáp (Câu hỏi thường gặp, Danh sách câu hỏi, Tạo câu hỏi) và Liên hệ
-- [ ] Prompt 5B: Đăng nhập/Đăng kí (modal), Tìm kiếm, chuyển ngôn ngữ Việt/Anh, widget thời tiết
+- [ ] Hoàn thiện E-learning (bộ lọc, 8 thẻ khóa học từ src/data/elearning.json, thẻ "Theo yêu cầu", dòng cập nhật 14/01/2016)
+- [ ] Prompt 5B: Đăng nhập/Đăng kí (modal), Tìm kiếm, nút "Theo dõi", đổi ngôn ngữ Việt/Anh, widget thời tiết, thanh cố định ở đáy màn hình
 - [ ] Rà soát: responsive, hover/focus, alt ảnh, link menu không 404
 ## Menu
 Trang chủ | Giới thiệu (Giới thiệu chung, Sơ đồ tổ chức) | Tin tức (Tin tức/Sự kiện, Hoạt động MSMV tại địa phương) | Hoạt động (Mã số mã vạch, Truy xuất nguồn gốc, Mã LEI, Mã UDI, Đào tạo) | Hỏi đáp (Câu hỏi thường gặp, Danh sách câu hỏi, Tạo câu hỏi) | Liên hệ

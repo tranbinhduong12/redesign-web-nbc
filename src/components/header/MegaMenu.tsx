@@ -51,7 +51,7 @@ export function MegaMenu({ open, onClose }: MegaMenuProps) {
         </div>
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-6">
-          {mainNav.map((item) => (
+          {mainNav.filter((item) => !item.megaMenuHidden).map((item) => (
             <section key={item.path} className="space-y-3">
               <NavLink
                 to={item.path}

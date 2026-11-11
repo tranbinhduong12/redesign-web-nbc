@@ -2,6 +2,7 @@ export interface NavItem {
   label: string;
   path: string;
   children?: NavItem[];
+  megaMenuHidden?: boolean;
 }
 
 export const mainNav: NavItem[] = [
@@ -10,10 +11,16 @@ export const mainNav: NavItem[] = [
     label: 'Giới thiệu',
     path: '/gioi-thieu',
     children: [
-      { label: 'Lịch sử hình thành', path: '/gioi-thieu/lich-su-hinh-thanh' },
-      { label: 'Chức năng nhiệm vụ', path: '/gioi-thieu/chuc-nang-nhiem-vu' },
-      { label: 'Cơ cấu tổ chức', path: '/gioi-thieu/co-cau-to-chuc' },
-      { label: 'Đối tác quốc tế', path: '/gioi-thieu/doi-tac-quoc-te' },
+      { label: 'Giới thiệu chung', path: '/gioi-thieu/lich-su-hinh-thanh' },
+      { label: 'Sơ đồ tổ chức', path: '/gioi-thieu/co-cau-to-chuc' },
+    ],
+  },
+  {
+    label: 'Tin tức',
+    path: '/tin-tuc',
+    children: [
+      { label: 'Tin tức/Sự kiện', path: '/tin-tuc/tin-tuc-su-kien' },
+      { label: 'Hoạt động MSMV tại địa phương', path: '/hoat-dong-msmv-dia-phuong' },
     ],
   },
   {
@@ -28,24 +35,6 @@ export const mainNav: NavItem[] = [
     ],
   },
   {
-    label: 'Tin tức',
-    path: '/tin-tuc',
-    children: [
-      { label: 'Tin tức sự kiện', path: '/tin-tuc/tin-tuc-su-kien' },
-      { label: 'Hoạt động MSMV địa phương', path: '/hoat-dong-msmv-dia-phuong' },
-      { label: 'Thông báo', path: '/tin-tuc/thong-bao' },
-      { label: 'Tin hoạt động', path: '/tin-tuc/tin-hoat-dong' },
-    ],
-  },
-  {
-    label: 'Truy xuất nguồn gốc',
-    path: '/truy-xuat-nguon-goc',
-    children: [
-      { label: 'Tra cứu sản phẩm', path: '/truy-xuat-nguon-goc/tra-cuu-san-pham' },
-      { label: 'Đăng ký chuỗi', path: '/truy-xuat-nguon-goc/dang-ky-chuoi' },
-    ],
-  },
-  {
     label: 'Hỏi đáp',
     path: '/hoi-dap',
     children: [
@@ -54,7 +43,7 @@ export const mainNav: NavItem[] = [
       { label: 'Tạo câu hỏi', path: '/hoi-dap/tao-cau-hoi' },
     ],
   },
-  { label: 'Tra cứu', path: '/tra-cuu' },
+  { label: 'E-learning', path: '/e-learning', megaMenuHidden: true },
   { label: 'Liên hệ', path: '/lien-he' },
 ];
 

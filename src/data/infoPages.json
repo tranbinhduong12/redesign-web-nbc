@@ -1,7 +1,7 @@
 [
   {
     "path": "/gioi-thieu/lich-su-hinh-thanh",
-    "title": "Lịch sử hình thành",
+    "title": "Giới thiệu chung",
     "summary": "Trung tâm Mã số, Mã vạch Quốc gia là đơn vị đầu mối triển khai hệ thống mã số mã vạch GS1 tại Việt Nam.",
     "paragraphs": [
       "Trung tâm Mã số, Mã vạch Quốc gia được thành lập để tổ chức, quản lý và phát triển hệ thống mã số mã vạch trên phạm vi toàn quốc. Từ những ngày đầu, Trung tâm đã đóng vai trò kết nối doanh nghiệp Việt Nam với hệ thống mã số mã vạch quốc tế GS1.",
@@ -19,7 +19,7 @@
   },
   {
     "path": "/gioi-thieu/co-cau-to-chuc",
-    "title": "Cơ cấu tổ chức",
+    "title": "Sơ đồ tổ chức",
     "summary": "Bộ máy Trung tâm gồm ban lãnh đạo và các phòng chuyên môn, phối hợp chặt chẽ với mạng lưới địa phương.",
     "paragraphs": [
       "Ban lãnh đạo Trung tâm chịu trách nhiệm điều hành chung các hoạt động cấp mã, tra cứu, đào tạo và hợp tác quốc tế. Mỗi phòng chuyên môn phụ trách một mảng công việc cụ thể, từ tiếp nhận hồ sơ đến phát triển hệ thống dữ liệu.",
@@ -121,6 +121,14 @@
       "Tạo mã thiết bị và mã sản xuất theo chuẩn GS1",
       "In mã lên nhãn thiết bị và hoàn thiện hồ sơ theo quy định",
       "Cập nhật thông tin khi có thay đổi về mẫu mã hoặc phiên bản"
+    ]
+  },
+  {
+    "path": "/e-learning",
+    "title": "E-LEARNING",
+    "summary": "Hệ thống đào tạo trực tuyến về mã số mã vạch và truy xuất nguồn gốc.",
+    "paragraphs": [
+      "Nội dung trang E-learning sẽ được cập nhật trong thời gian tới."
     ]
   },
   {

@@ -74,6 +74,3 @@ export function ContentPage({ page }: ContentPageProps) {
     </SectionLayout>
   );
 }
-
-
-export { ContentPage }
