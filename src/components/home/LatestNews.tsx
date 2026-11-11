@@ -1,28 +1,20 @@
 import { Link } from 'react-router-dom';
 import { Calendar } from 'lucide-react';
 import { SectionHeading } from '@/components/common/SectionHeading';
+import { formatDate } from '@/utils/date';
 import news from '@/data/news.json';
 import type { NewsArticle, NewsData } from '@/types/content';
 
 const newsData: NewsData = news;
-const NEWS_LISTING_PATH = '/tin-tuc/tin-tuc-su-kien';
-
-function formatDate(isoDate: string): string {
-  return new Date(`${isoDate}T00:00:00`).toLocaleDateString('vi-VN', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-  });
-}
 
 function FeaturedArticle({ article }: { article: NewsArticle }) {
   return (
     <Link
-      to={NEWS_LISTING_PATH}
+      to={`/tin-tuc/${article.slug}`}
       className="group relative block h-full min-h-[320px] overflow-hidden rounded-xl bg-navy-900 shadow-md sm:min-h-[420px]"
     >
       <img
-        src={article.image}
+        src={article.thumbnail}
         alt=""
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
@@ -30,7 +22,7 @@ function FeaturedArticle({ article }: { article: NewsArticle }) {
       <div className="absolute inset-x-0 bottom-0 space-y-3 p-6 sm:p-8">
         <p className="flex items-center gap-2 text-sm text-white/85">
           <Calendar className="h-4 w-4" aria-hidden="true" />
-          {formatDate(article.publishedAt)}
+          {formatDate(article.date)}
         </p>
         <h3 className="text-xl font-bold leading-snug text-white transition-colors duration-200 group-hover:text-primary-200 sm:text-3xl">
           {article.title}
@@ -44,11 +36,11 @@ function FeaturedArticle({ article }: { article: NewsArticle }) {
 function CompactArticle({ article }: { article: NewsArticle }) {
   return (
     <Link
-      to={NEWS_LISTING_PATH}
+      to={`/tin-tuc/${article.slug}`}
       className="group flex items-center gap-4 rounded-xl border border-neutral-200 bg-white p-3 transition-all duration-200 hover:border-primary-200 hover:shadow-md"
     >
       <img
-        src={article.image}
+        src={article.thumbnail}
         alt=""
         className="h-24 w-28 shrink-0 rounded-lg object-cover sm:w-36"
       />
@@ -58,7 +50,7 @@ function CompactArticle({ article }: { article: NewsArticle }) {
         </h3>
         <p className="flex items-center gap-2 text-sm text-neutral-500">
           <Calendar className="h-4 w-4" aria-hidden="true" />
-          {formatDate(article.publishedAt)}
+          {formatDate(article.date)}
         </p>
       </div>
     </Link>
@@ -68,7 +60,7 @@ function CompactArticle({ article }: { article: NewsArticle }) {
 export function LatestNews() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <SectionHeading title="Tin mới nhất" actionLabel="Xem tất cả" actionTo={NEWS_LISTING_PATH} />
+      <SectionHeading title="Tin mới nhất" actionLabel="Xem tất cả" actionTo="/tin-tuc" />
       <div className="mt-8 grid gap-6 lg:grid-cols-5">
         <div className="lg:col-span-3">
           <FeaturedArticle article={newsData.featured} />

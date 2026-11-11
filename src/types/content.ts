@@ -11,14 +11,21 @@ export interface Banner {
 export interface NewsArticle {
   id: string;
   title: string;
+  slug: string;
+  date: string;
+  category: string;
+  thumbnail: string;
   summary: string;
-  image: string;
-  publishedAt: string;
+  content: string;
 }
 
 export interface NewsData {
   featured: NewsArticle;
   items: NewsArticle[];
+}
+
+export function isNewsData(data: unknown): data is NewsData {
+  return typeof data === 'object' && data !== null && 'featured' in data && 'items' in data;
 }
 
 export interface StatItem {
