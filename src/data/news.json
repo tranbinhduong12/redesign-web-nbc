@@ -1,0 +1,39 @@
+{
+  "featured": {
+    "id": "news-featured",
+    "title": "Hội nghị triển khai chiến lược mã số mã vạch giai đoạn mới",
+    "summary": "Hội nghị quy tụ đại diện các bộ, ngành và doanh nghiệp để thống nhất lộ trình số hóa dữ liệu sản phẩm trên toàn quốc.",
+    "image": "https://images.pexels.com/photos/15141493/pexels-photo-15141493.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "publishedAt": "2026-11-10"
+  },
+  "items": [
+    {
+      "id": "news-1",
+      "title": "Đẩy mạnh ứng dụng mã QR trong truy xuất sản phẩm nông sản",
+      "summary": "Nhiều hợp tác xã đã triển khai mã QR trên bao bì rau củ quả.",
+      "image": "https://images.pexels.com/photos/278430/pexels-photo-278430.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "publishedAt": "2026-11-07"
+    },
+    {
+      "id": "news-2",
+      "title": "Tập huấn kỹ năng đăng ký mã số doanh nghiệp năm 2026",
+      "summary": "Chương trình giúp doanh nghiệp vừa và nhỏ làm quen quy trình cấp mã.",
+      "image": "https://images.pexels.com/photos/8761561/pexels-photo-8761561.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "publishedAt": "2026-11-04"
+    },
+    {
+      "id": "news-3",
+      "title": "Hoạt động MSMV tại địa phương được đẩy mạnh quý IV",
+      "summary": "Các địa phương triển khai kế hoạch phổ biến mã số mã vạch đến hộ kinh doanh.",
+      "image": "https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "publishedAt": "2026-10-29"
+    },
+    {
+      "id": "news-4",
+      "title": "Nâng cấp hệ thống tra cứu mã số mã vạch trực tuyến",
+      "summary": "Giao diện mới giúp người dùng tra cứu thông tin doanh nghiệp nhanh hơn.",
+      "image": "https://images.pexels.com/photos/31834232/pexels-photo-31834232.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "publishedAt": "2026-10-22"
+    }
+  ]
+}

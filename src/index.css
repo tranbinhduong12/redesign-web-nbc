@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-50: 238 246 252;
+  --color-primary-100: 213 232 247;
+  --color-primary-200: 174 210 240;
+  --color-primary-300: 127 184 230;
+  --color-primary-400: 90 159 219;
+  --color-primary-500: 51 133 205;
+  --color-primary-600: 42 111 174;
+  --color-primary-700: 35 90 140;
+  --color-primary-800: 29 74 114;
+  --color-primary-900: 23 59 91;
+
+  --color-navy-50: 232 237 242;
+  --color-navy-100: 197 208 219;
+  --color-navy-200: 143 163 183;
+  --color-navy-300: 91 118 145;
+  --color-navy-400: 54 84 111;
+  --color-navy-500: 31 58 84;
+  --color-navy-600: 21 41 61;
+  --color-navy-700: 16 33 52;
+  --color-navy-800: 13 27 42;
+  --color-navy-900: 11 28 44;
+
+  --color-secondary-50: 236 253 250;
+  --color-secondary-100: 207 250 241;
+  --color-secondary-200: 159 240 226;
+  --color-secondary-300: 95 220 201;
+  --color-secondary-400: 47 194 173;
+  --color-secondary-500: 15 157 142;
+  --color-secondary-600: 12 127 116;
+  --color-secondary-700: 11 101 94;
+  --color-secondary-800: 10 81 76;
+  --color-secondary-900: 8 66 63;
+
+  --color-accent-50: 255 247 236;
+  --color-accent-100: 254 235 204;
+  --color-accent-200: 252 213 152;
+  --color-accent-300: 249 187 94;
+  --color-accent-400: 246 168 58;
+  --color-accent-500: 240 140 26;
+  --color-accent-600: 210 112 15;
+  --color-accent-700: 174 90 15;
+  --color-accent-800: 140 72 18;
+  --color-accent-900: 115 60 18;
+
+  --color-success-50: 237 249 242;
+  --color-success-100: 210 241 222;
+  --color-success-200: 166 227 189;
+  --color-success-300: 111 207 147;
+  --color-success-400: 67 185 112;
+  --color-success-500: 46 158 91;
+  --color-success-600: 35 127 72;
+  --color-success-700: 29 101 57;
+  --color-success-800: 26 80 47;
+  --color-success-900: 22 66 41;
+
+  --color-warning-50: 255 251 235;
+  --color-warning-100: 254 243 199;
+  --color-warning-200: 253 230 138;
+  --color-warning-300: 252 211 77;
+  --color-warning-400: 251 191 36;
+  --color-warning-500: 224 161 0;
+  --color-warning-600: 185 127 0;
+  --color-warning-700: 148 98 0;
+  --color-warning-800: 122 80 0;
+  --color-warning-900: 95 61 0;
+
+  --color-error-50: 253 242 242;
+  --color-error-100: 253 227 227;
+  --color-error-200: 251 196 196;
+  --color-error-300: 247 154 154;
+  --color-error-400: 238 108 108;
+  --color-error-500: 214 69 69;
+  --color-error-600: 185 52 52;
+  --color-error-700: 149 40 40;
+  --color-error-800: 122 35 35;
+  --color-error-900: 95 28 28;
+
+  --color-neutral-0: 255 255 255;
+  --color-neutral-50: 247 248 250;
+  --color-neutral-100: 238 240 243;
+  --color-neutral-200: 221 225 231;
+  --color-neutral-300: 195 201 210;
+  --color-neutral-400: 154 163 175;
+  --color-neutral-500: 107 116 128;
+  --color-neutral-600: 77 85 96;
+  --color-neutral-700: 55 64 73;
+  --color-neutral-800: 37 43 51;
+  --color-neutral-900: 22 26 32;
+
+  --color-brand-primary: var(--color-primary-500);
+  --color-brand-navy: var(--color-navy-900);
+  --color-text-body: var(--color-neutral-800);
+  --color-surface: var(--color-neutral-0);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-surface font-sans text-text-body antialiased;
+    font-family: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  a {
+    @apply text-primary-500 transition-colors duration-200 hover:text-primary-600;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-400 ring-offset-2;
+  }
+}

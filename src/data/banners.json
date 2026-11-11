@@ -1,0 +1,29 @@
+[
+  {
+    "id": "barcode",
+    "image": "https://images.pexels.com/photos/12935049/pexels-photo-12935049.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "eyebrow": "MÃ SỐ MÃ VẠCH",
+    "title": "Mã số mã vạch chuẩn quốc tế cho mọi sản phẩm",
+    "description": "Cấp mã số, mã vạch GS1 giúp doanh nghiệp nhận diện sản phẩm và kết nối hiệu quả với đối tác trong và ngoài nước.",
+    "ctaLabel": "Tìm hiểu thêm",
+    "ctaPath": "/hoat-dong/ma-so-ma-vach"
+  },
+  {
+    "id": "traceability",
+    "image": "https://images.pexels.com/photos/9117894/pexels-photo-9117894.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "eyebrow": "TRUY XUẤT NGUỒN GỐC",
+    "title": "Minh bạch từ trang trại đến bàn ăn",
+    "description": "Theo dõi hành trình nông sản rau củ quả tươi qua từng công đoạn, giúp người tiêu dùng yên tâm lựa chọn.",
+    "ctaLabel": "Xem chi tiết",
+    "ctaPath": "/hoat-dong/truy-xuat-nguon-goc"
+  },
+  {
+    "id": "supply-chain",
+    "image": "https://images.pexels.com/photos/36398150/pexels-photo-36398150.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "eyebrow": "CHUỖI CUNG ỨNG",
+    "title": "Kết nối chuỗi cung ứng hiệu quả và bền vững",
+    "description": "Chuẩn hóa dữ liệu sản phẩm xuyên suốt chuỗi cung ứng, từ nhà sản xuất, kho vận đến nhà bán lẻ.",
+    "ctaLabel": "Xem tin tức",
+    "ctaPath": "/tin-tuc/tin-tuc-su-kien"
+  }
+]
