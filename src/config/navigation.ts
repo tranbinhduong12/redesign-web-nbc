@@ -49,12 +49,18 @@ export const mainNav: NavItem[] = [
     label: 'Hỏi đáp',
     path: '/hoi-dap',
     children: [
+      { label: 'Câu hỏi thường gặp', path: '/hoi-dap/cau-hoi-thuong-gap' },
       { label: 'Danh sách câu hỏi', path: '/hoi-dap/danh-sach-cau-hoi' },
       { label: 'Tạo câu hỏi', path: '/hoi-dap/tao-cau-hoi' },
     ],
   },
   { label: 'Tra cứu', path: '/tra-cuu' },
+  { label: 'Liên hệ', path: '/lien-he' },
 ];
+
+export function findParentNavItem(path: string): NavItem | undefined {
+  return mainNav.find((item) => item.children?.some((child) => child.path === path));
+}
 
 export function flattenNavItems(items: NavItem[]): NavItem[] {
   return items.flatMap((item) => [item, ...(item.children ?? [])]);

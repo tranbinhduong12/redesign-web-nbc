@@ -45,6 +45,28 @@ export interface ActivityItem {
 
 export interface FaqItem {
   id: string;
+  topic: string;
   question: string;
   answer: string;
+}
+
+export type QuestionStatus = 'answered' | 'pending';
+
+export interface QuestionItem {
+  id: string;
+  topic: string;
+  title: string;
+  content: string;
+  askedAt: string;
+  status: QuestionStatus;
+  answer?: string;
+}
+
+export interface InfoPage {
+  path: string;
+  title: string;
+  summary: string;
+  paragraphs: string[];
+  benefits?: string[];
+  steps?: string[];
 }

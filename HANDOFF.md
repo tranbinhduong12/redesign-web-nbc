@@ -11,15 +11,15 @@ Stack: React + Vite + TypeScript + Tailwind. Giao diện tiếng Việt, respons
 - Dữ liệu mẫu để trong src/data/*.json.
 
 ## Đã làm
-- [x] Khung chung: header 2 tầng, menu + mega menu, footer, routing (SiteLayout, config/navigation)
+- [x] Khung chung: header 2 tầng, menu + mega menu, footer, routing
 - [x] Trang chủ
-- [x] Tin tức (danh sách, chi tiết, src/data/news.json)
-- [~] Giới thiệu + Hoạt động: làm DỞ khi công cụ hết token, cần kiểm tra file thiếu/lỗi
+- [x] Tin tức (danh sách, chi tiết)
+- [x] Giới thiệu (Giới thiệu chung, Sơ đồ tổ chức) và Hoạt động (5 trang)
+- [~] Prompt 5A (Hỏi đáp, Liên hệ): làm dở khi hết token, cần kiểm tra file thiếu/lỗi
 
 ## Còn lại
-- [ ] Hoàn thiện: Giới thiệu chung, Sơ đồ tổ chức; Hoạt động (Mã số mã vạch, Truy xuất nguồn gốc, Mã LEI, Mã UDI, Đào tạo) dùng template trang nội dung dùng chung
-- [ ] Hỏi đáp (Câu hỏi thường gặp, Danh sách câu hỏi, Tạo câu hỏi), Liên hệ, Đăng nhập/Đăng kí, Tìm kiếm, chuyển ngôn ngữ Việt/Anh
+- [ ] Hoàn thiện Hỏi đáp (Câu hỏi thường gặp, Danh sách câu hỏi, Tạo câu hỏi) và Liên hệ
+- [ ] Prompt 5B: Đăng nhập/Đăng kí (modal), Tìm kiếm, chuyển ngôn ngữ Việt/Anh, widget thời tiết
 - [ ] Rà soát: responsive, hover/focus, alt ảnh, link menu không 404
-
 ## Menu
 Trang chủ | Giới thiệu (Giới thiệu chung, Sơ đồ tổ chức) | Tin tức (Tin tức/Sự kiện, Hoạt động MSMV tại địa phương) | Hoạt động (Mã số mã vạch, Truy xuất nguồn gốc, Mã LEI, Mã UDI, Đào tạo) | Hỏi đáp (Câu hỏi thường gặp, Danh sách câu hỏi, Tạo câu hỏi) | Liên hệ
